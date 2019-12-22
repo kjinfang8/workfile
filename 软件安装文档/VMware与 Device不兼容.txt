@@ -1,0 +1,20 @@
+
+参考网络链接：：：https://blog.csdn.net/qq_23599965/article/details/80395396
+
+VMware Workstation 与 Device/Credential Guard 不兼容。
+在禁用 Device/Credential Guard 后，可以运行 VMware Workstation。
+有关更多详细信息，请访问 http://www.vmware.com/go/turnoff_CG_DG。123
+
+
+2. 关闭hyper 以管理员身份运行Windows Powershell (管理员)
+
+运行下面命令 并重启电脑
+
+bcdedit /set hypervisorlaunchtype off1
+
+
+3. 如果要开启hyper
+
+bcdedit /set hypervisorlaunchtype auto
+
+4、重新启动计算机
